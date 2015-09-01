@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="imApp">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<title>Inside Mediafly Theme</title>
+
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/jquery.mmenu.css">
+	<link rel="stylesheet" href="css/mfly-menu.css">
+	<link rel="stylesheet" href="css/mystyles.css">
+	
+</head>
+<body>
+
+    <div class="header">
+        <a href="#menu"><span class="fa fa-bars fa-2x" id="hamburger-menu"></span></a>
+    </div>
+
+    <nav id="menu">
+         <ul>
+            <li class="annotations">
+              <i class="fa fa-pencil-square-o"></i> <span class="menu-item">Annotations</span>
+            </li>
+            <li class="second-screen">
+              <i class="fa fa-slideshare"></i> <span class="menu-item">Second Screen</span>
+            </li>
+            <li class="collections">
+              <i class="fa fa-plus"></i> <span class="menu-item">Collections</span>
+            </li>
+            <li class="previous">
+              <i class="fa fa-arrow-left"></i> <span class="menu-item">Previous</span>
+            </li>
+            <li class="next">
+              <i class="fa fa-arrow-right"></i> <span class="menu-item">Next</span>
+            </li>
+            <li class="close-btn">
+              <i class="fa fa-close"></i> <span class="menu-item">Close</span>
+            </li>
+         </ul>
+    </nav>
+
+	<div class="container">
+		<div ng-view></div>
+	</div>
+
+	<!-- main libaries -->
+	<script src="lib/jquery.js"></script>
+	<script src="lib/angular.js"></script>
+	<!-- jQuery Plugins-->
+	<script src="lib/fastclick.js"></script>
+	<script src="hamburger/jquery.mmenu.min.js"></script>
+	<script src="hamburger/ext.js"></script>
+	<!-- angular modules -->
+	<!-- main script -->
+	<script src="lib/angular-route.js"></script>
+	<!-- other scripts -->
+	<script src="main.js"></script>
+	<script src="lib/mflyCommands.js"></script>
+	<!-- directives -->	
+
+	<!-- services -->
+	<script src="services/mfly-search.js"></script>
+
+	
+	<!-- controllers -->
+	<script src="controllers/main-view.js"></script>
+	<script src="http://10.0.0.73:8080/target/target-script-min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+			// Uses document because document will be topmost level in bubbling
+		    $(document).on('touchmove',function(e){
+		        e.preventDefault();
+		    });
+
+		    // init FastClick.js
+		    $(function() {
+			    FastClick.attach(document.body);
+			});
+	});
+	</script>
+	
+</body>
+</html>
