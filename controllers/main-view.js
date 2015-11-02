@@ -1,16 +1,16 @@
 angular.module('imApp')
 
-	.controller('mainViewCtrl', function($scope, mflySearch){
+	.controller('mainViewCtrl', function($scope, mflySearch, $location){
 		
 		mflySearch.search('@Featured').then(function(data){
-			console.log("@Featured = ", JSON.stringify(data, null, 2));
 			$scope.featured = data;
-		})		
+			console.log(data);
+		})	
 
 		mflySearch.search('@TopLevelSales').then(function(data){
-			console.log("@TopLevelSales = ", JSON.stringify(data, null, 2));
 			$scope.topLevelSales = data;
 		})
+
 
 		$scope.openFolder = function(id) {
 			mflyCommands.openFolder(id);
@@ -19,11 +19,8 @@ angular.module('imApp')
 		$scope.taglineImage = 'images/inside_mediafly_logo.png';
 
 		$scope.openMyItems = function() {
-			mflyCommands.getFolder("__root__")
-				.done(function(data){
-					console.log("clicked!", data);
-					var myItemsId = data[data.length - 1]["id"];
-					mflyCommands.openFolder(myItemsId);
-				});
+			mflyCommands.openFolder('f7e484d0e3ee4e87901ee34fe2fcbe1aproductmyitems');
 		}
+
+ 
 	});
