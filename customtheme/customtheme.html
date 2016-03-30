@@ -1,0 +1,17 @@
+<div class="logo-container">
+	<img src="common/img/logo.png">
+</div>
+<div class="featured-container-portrait">
+	<div class="row" ng-repeat="folder in featured">
+		<img class="col-sm-6 pull-right img-responsive featured-thumb" src="{{folder.thumbnailUrl}}" ng-click="openFolder(folder.id)">
+	</div>
+</div>
+
+<div class="bottom-container">
+	<div ng-repeat="folder in topLevelSales" class="thumb" ng-click="openFolder(folder.id)">
+		<p>{{folder.name}}</p>
+	</div>
+	<div class="thumb" ng-click="openMyItems()">
+		<p>My Items</p>
+	</div>
+</div>

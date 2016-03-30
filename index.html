@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html ng-app="imApp">
+<html ng-app="customThemeApp">
 <head>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-	<title>Inside Mediafly Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+	<title>IM Custom Theme</title>
 
 
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/jquery.mmenu.css">
-	<link rel="stylesheet" href="css/mfly-menu.css">
-	<link rel="stylesheet" href="css/mystyles.css">
+  <link rel="stylesheet" href="common/libs/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="common/libs/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="common/libs/hamburger/jquery.mmenu.css">
+	<link rel="stylesheet" href="common/libs/hamburger/mfly-menu.css">
+	<link rel="stylesheet" href="common/css/mystyles.css">
 	
 </head>
 <body>
@@ -48,40 +47,34 @@
 		<div ng-view></div>
 	</div>
 
-	<!-- main libaries -->
-	<script src="lib/jquery.js"></script>
-	<script src="lib/angular.js"></script>
-	<!-- jQuery Plugins-->
-	<script src="lib/mflyCommands.js"></script>
-	<script src="lib/fastclick.js"></script>
-	<script src="hamburger/jquery.mmenu.min.js"></script>
-	<script src="hamburger/ext.js"></script>
-	<!-- angular modules -->
-	<!-- main script -->
-	<script src="lib/angular-route.js"></script>
-	<!-- other scripts -->
-	<script src="main.js"></script>
-	<!-- directives -->	
-
-	<!-- services -->
-	<script src="services/mfly-search.js"></script>
-
 	
-	<!-- controllers -->
-	<script src="controllers/main-view.js"></script>
-	<!-- // <script src="http://10.0.0.93:8080/target/target-script-min.js"></script> -->
+    <script src="common/libs/jquery/dist/jquery.js"></script>
+  	<script src="common/libs/fastclick/lib/fastclick.js"></script>
+  	<script src="common/libs/angular/angular.js"></script>
+  	<script src="common/libs/angular-route/angular-route.js"></script>
+  	<script src="common/libs/mfly-commands/src/mflyCommands.js"></script>
+  	<script src="app.js"></script>
+
+  	<script src="common/libs/hamburger/jquery.mmenu.min.js"></script>
+  	<script src="common/libs/hamburger/ext.js"></script>
+
+
+	<!-- Factories -->
+		<script src="customtheme/mfly.js"></script>
+	<!-- End Factories -->	
+
+	<!-- Controllers -->
+		<script src="customtheme/customtheme.js"></script>
+	<!-- Controllers -->
+
 	<script type="text/javascript">
-	$(document).ready(function(){
-			// Uses document because document will be topmost level in bubbling
+
+		$(document).ready(function(){
 		    $(document).on('touchmove',function(e){
 		        e.preventDefault();
 		    });
+		});
 
-		    // init FastClick.js
-		    $(function() {
-			    FastClick.attach(document.body);
-			});
-	});
 	</script>
 	
 </body>

@@ -1,0 +1,149 @@
+@font-face {
+	font-family: proxyNovaLight;
+	src:url('../fonts/ProximaNova-Light.ttf');
+}
+
+@font-face {
+	font-family: proxyNovaThin;
+	src:url('../fonts/ProximaNova-Thin.ttf');
+}
+
+body { 
+  background: url('../img/green-background-2.jpg') no-repeat top center fixed;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.margin-top-40 {
+	margin-top:40px;
+}
+
+.logo-container {
+	position: absolute;
+	top: 25px;
+	left: 25px;  
+}
+
+.logo-container img {
+	width:50%;
+	height:auto;
+}
+
+.featured-container-portrait {
+	margin-top:100px;
+}
+
+.featured-thumb {
+	width:400px;
+	padding:100px 0;
+	margin-top:-150px;
+}
+
+/********    Top Level Sales    *******/
+
+.bottom-container {
+	width:960px;
+	height:200px;
+	position: absolute;
+	bottom:30px;
+	text-align: center;
+}
+
+.thumb {
+	width:200px;
+	height:200px;
+	background-color: #404D66;
+	color:#fff;
+	font-family: "proxyNovaThin", Helvetica;
+	display: inline-block;
+	margin:10px;
+	box-shadow: 3px 3px 3px #494948;
+	vertical-align: middle;
+}
+
+.thumb p {
+	font-size:28px;
+  	position: relative;
+  	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+
+/*===================================================
+
+				Media Queries
+
+====================================================*/
+/*iPad Landscape*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : landscape) {
+
+	.featured-thumb {
+		width:400px;
+		margin-top:-150px;
+	}
+
+	.bottom-container {
+		height:160px;
+	}
+
+	.thumb {
+		width:160px;
+		height:160px;
+	}
+
+}
+
+/* iPad Portrait */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait) { 
+
+	.featured-container-portrait {
+		position: relative;
+		top:250px;
+	}
+
+	.featured-thumb {
+		position: relative;
+		top:-75px;
+		left:-25px;
+	}
+
+	.bottom-container {
+		position: absolute;
+		left:-100px;
+		height:160px;
+	}
+
+	.bottom-container {
+		height:160px;
+	}
+
+	.thumb {
+		width:160px;
+		height:160px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+}
+
+
+/** iPhone 6 Landscape **/
+@media only screen and (max-width: 736px) {
+
+}
+
+/** iPhone 5 Landscape **/
+@media only screen and (max-width: 640px) {
+
+}
