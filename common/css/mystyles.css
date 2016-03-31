@@ -76,6 +76,10 @@ body {
 				Media Queries
 
 ====================================================*/
+
+/*===================================================
+				      iPad
+====================================================*/
 /*iPad Landscape*/
 @media only screen 
 and (min-width : 768px) 
@@ -132,18 +136,301 @@ and (orientation : portrait) {
 
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-	
+/*===================================================
+				  iPhone 6 Plus
+====================================================*/
+
+/*iPhone 6+ Landscape*/
+@media only screen 
+and (width : 736px) 
+and (height : 414px) 
+and (orientation : landscape) { 
+	.logo-container img {
+		width:35%;
+		height:auto;
+	}
+
+	.featured-thumb {
+		width:225px;
+		padding:85px 0;
+		position: relative;
+		left:-30px;
+		top:-10px;
+	}
+
+	.bottom-container {
+		width: 736px;
+	    height: 100px;
+	    position: absolute;
+	    bottom: 30px;
+	    text-align: center;
+	}
+
+	.thumb {
+		width:100px;
+		height:100px;
+	}
+
+	.thumb p {
+		font-size:12px;
+	}
+}
+
+/*iPhone 6+ Portrait*/
+@media only screen 
+and (width : 414px) 
+and (height : 736px) 
+and (orientation : portrait) { 
+	.featured-thumb {
+		width:225px;
+		padding:85px 0;
+		position: relative;
+		left:-25px;
+		top:200px;
+	}
+
+	.bottom-container {
+		width: 385px; /* shifts left right into proper position. use instead of 414px */
+	    height: 75px;
+	    position: absolute;
+	    bottom: 30px;
+	    text-align: center;
+	}
+
+	.thumb {
+		width:75px;
+		height:75px;
+	}
+
+	.thumb p {
+		font-size:12px;
+	}
 }
 
 
-/** iPhone 6 Landscape **/
-@media only screen and (max-width: 736px) {
+/*===================================================
+				  iPhone 6
+====================================================*/
 
+/*iPhone 6 landscape*/
+@media only screen 
+and (width : 668px) 
+and (height : 376px) 
+and (orientation : landscape) {
+	.logo-container img {
+		width:30%;
+		height:auto;
+	}
+
+	.featured-thumb {
+		width:200px;
+		padding:85px 0;
+		position: relative;
+		left:-30px;
+		top:-10px;
+	}
+
+	.bottom-container {
+		width: 667px;
+	    height: 90px;
+	    position: absolute;
+	    bottom: 20px;
+	    text-align: center;
+	}
+
+	.thumb {
+		width:90px;
+		height:90px;
+	}
+
+	.thumb p {
+		font-size:12px;
+	}
 }
 
-/** iPhone 5 Landscape **/
-@media only screen and (max-width: 640px) {
+/*iPhone 6 portrait*/
+@media only screen 
+and (width : 376px) 
+and (height : 668px) 
+and (orientation : portrait) {
+	.featured-thumb {
+		width:225px;
+		padding:85px 0;
+		position: relative;
+		left:-25px;
+		top:200px;
+	}
 
+	.bottom-container {
+		width:376px;
+		margin-left:-15px;
+	    height: 70px;
+	    position: absolute;
+	    bottom: 30px;
+	    text-align: center;
+	}
+
+	.thumb {
+		width:70px;
+		height:70px;
+	}
+
+	.thumb p {
+		font-size:8px;
+	}
+}
+
+
+/*===================================================
+				  iPhone 5
+====================================================*/
+
+/*iPhone 5 landscape*/
+@media only screen 
+and (width : 568px) 
+and (height : 320px) 
+and (orientation : landscape) {
+	.logo-container img {
+		width:25%;
+		height:auto;
+	}
+
+	.featured-thumb {
+		width:175px;
+		padding:85px 0;
+		position: relative;
+		left:-30px;
+		top:-10px;
+	}
+
+	.bottom-container {
+		width: 568px;
+	    height: 75px;
+	    position: absolute;
+	    bottom: 20px;
+	    text-align: center;
+	}
+
+	.thumb {
+		width:75px;
+		height:75px;
+	}
+
+	.thumb p {
+		font-size:12px;
+	}
+}
+
+/*iPhone 5 portrait*/
+@media only screen 
+and (width : 320px) 
+and (height : 568px) 
+and (orientation : portrait) {
+	.logo-container img {
+		width:35%;
+		height:auto;
+	}
+
+	.featured-thumb {
+		width: 200px;
+	    padding: 85px 0;
+	    position: relative;
+	    left: -20px;
+	    top: 125px;
+	}
+
+	.bottom-container {
+		width: 293px;
+	    height: 50px;
+	    position: absolute;
+	    bottom: 30px;©
+	    text-align: center;
+	}
+
+	.thumb {
+		width:50px;
+		height:50px;
+	}
+
+	.thumb p {
+		font-size:8px;
+	}
+}
+
+
+/*===================================================
+				  iPhone 4
+====================================================*/
+
+/*iPhone 4 landscape*/
+@media only screen 
+and (width : 480px) 
+and (height : 320px) 
+and (orientation : landscape) {
+	.logo-container img {
+		width:25%;
+		height:auto;
+	}
+
+	.featured-thumb {
+		width:175px;
+		padding:85px 0;
+		position: relative;
+		left:-30px;
+		top:-10px;
+	}
+
+	.bottom-container {
+		width: 480px;
+	    height: 75px;
+	    position: absolute;
+	    bottom: 20px;
+	    text-align: center;
+	}
+
+	.thumb {
+		width:75px;
+		height:75px;
+	}
+
+	.thumb p {
+		font-size:12px;
+	}
+}
+
+/*iPhone 4 portrait*/
+@media only screen 
+and (width : 320px) 
+and (height : 480px) 
+and (orientation : portrait) {
+	.logo-container img {
+		width:35%;
+		height:auto;
+	}
+
+	.featured-thumb {
+		width: 200px;
+	    padding: 85px 0;
+	    position: relative;
+	    left: -20px;
+	    top: 125px;
+	}
+
+	.bottom-container {
+		width: 320px;
+		margin-left:-15px;
+	    height: 50px;
+	    position: absolute;
+	    bottom: 30px;©
+	    text-align: center;
+	}
+
+	.thumb {
+		width:50px;
+		height:50px;
+	}
+
+	.thumb p {
+		font-size:8px;
+	}
 }
