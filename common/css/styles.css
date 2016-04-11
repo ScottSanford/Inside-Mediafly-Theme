@@ -24,58 +24,7 @@ body {
 	left: 25px;  
 }
 
-.featured-thumb-container {
-	height:100vh;
-	width:50%;
-	position: absolute;
-	top:0;
-	right:0;
 
-}
-
-.featured-thumb {
-	width:350px;
-	float: right;
-	margin-right: 25px;
-	margin-top:25px;
-	/*border:1px solid red;*/
-}
-
-.logo-container img {
-	width:50%;
-	height:auto;
-}
-
-/********    Top Level Sales    *******/
-
-.bottom-container {
-	width:100%;
-	height:150px;
-	position: absolute;
-	bottom:30px;
-	text-align: center;
-}
-
-.thumb {
-	width:150px;
-	height:150px;
-	background-color: #404D66;
-	color:#fff;
-	font-family: "proxyNovaThin", Helvetica;
-	display: inline-block;
-	margin:10px;
-	box-shadow: 3px 3px 3px #494948;
-	vertical-align: middle;
-}
-
-.thumb p {
-	font-size:28px;
-  	position: relative;
-  	top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-  	transform: translateY(-50%);
-}
 
 
 /*===================================================
@@ -83,16 +32,73 @@ body {
 				Media Queries
 
 ====================================================*/
+/*Desktop*/
+@media only screen 
+and (min-width : 500px) { 
+	.featured-thumb-container {
+		height:100vh;
+		width:50%;
+		position: absolute;
+		top:0;
+		right:0;
+	}
 
+	.featured-thumb {
+		width:350px;
+		float: right;
+		position: relative;
+		margin-top:-125px;
+		top:50px;
+		right: 25px;
+
+
+	}
+
+	.logo-container img {
+		width:50%;
+		height:auto;
+	}
+
+	/********    Top Level Sales    *******/
+
+	.bottom-container {
+		width:100%;
+		height:150px;
+		position: absolute;
+		bottom:30px;
+		text-align: center;
+	}
+
+	.thumb {
+		width:150px;
+		height:150px;
+		background-color: #404D66;
+		color:#fff;
+		font-family: "proxyNovaThin", Helvetica;
+		display: inline-block;
+		margin:10px;
+		box-shadow: 3px 3px 3px #494948;
+		vertical-align: middle;
+	}
+
+	.thumb p {
+		font-size:28px;
+	  	position: relative;
+	  	top: 50%;
+	    -webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	  	transform: translateY(-50%);
+	}
+}
 /*===================================================
 				      iPad
 ====================================================*/
 /*iPad Landscape*/
 @media only screen 
 and (width : 1024px) 
-and (height : 768px) 
-and (orientation : landscape) {
-
+and (height : 748px) 
+and (orientation : landscape) { 
+	/* ACCOUNT FOR STATUS BAR OF 20PX*/
 	.featured-thumb {
 		position: relative;
     	margin-top: -150px;
@@ -113,9 +119,9 @@ and (orientation : landscape) {
 /* iPad Portrait */
 @media only screen 
 and (width : 768px) 
-and (height : 1024px) 
+and (height : 1004px) 
 and (orientation : portrait) { 
-
+	/* ACCOUNT FOR STATUS BAR OF 20PX*/
 	.featured-thumb {
 		position: relative;
     	margin-top: -150px;
@@ -139,9 +145,10 @@ and (orientation : portrait) {
 
 /*iPhone 6+ Landscape*/
 @media only screen 
-and (width : 736px) 
+and (width : 716px) 
 and (height : 414px) 
 and (orientation : landscape) { 
+	/* ACCOUNT FOR STATUS BAR OF 20PX*/
 	.logo-container img {
 		width:35%;
 		height:auto;
@@ -175,8 +182,9 @@ and (orientation : landscape) {
 /*iPhone 6+ Portrait*/
 @media only screen 
 and (width : 414px) 
-and (height : 736px) 
+and (height : 716px) 
 and (orientation : portrait) { 
+	/* ACCOUNT FOR STATUS BAR OF 20PX*/
 	.featured-thumb {
 		position: relative;
 		margin-top:-80px;
@@ -208,8 +216,9 @@ and (orientation : portrait) {
 /*iPhone 6 landscape*/
 @media only screen 
 and (width : 667px) 
-and (height : 375px) 
+and (height : 355px) 
 and (orientation : landscape) {
+	/* ACCOUNT FOR STATUS BAR OF 20PX*/
 	.logo-container img {
 		width:30%;
 		height:auto;
@@ -243,8 +252,9 @@ and (orientation : landscape) {
 /*iPhone 6 portrait*/
 @media only screen 
 and (width : 375px) 
-and (height : 667px) 
+and (height : 647px) 
 and (orientation : portrait) {
+	/* ACCOUNT FOR STATUS BAR OF 20PX*/
 	.featured-thumb {
 		width:225px;
 		position: relative;
