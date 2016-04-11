@@ -362,10 +362,8 @@ and (orientation : landscape) {
 
 	.featured-thumb {
 		width:175px;
-		padding:85px 0;
 		position: relative;
-		left:-30px;
-		top:-10px;
+		top:45px;
 	}
 
 	.bottom-container {
@@ -398,15 +396,12 @@ and (orientation : portrait) {
 
 	.featured-thumb {
 		width: 200px;
-	    padding: 85px 0;
 	    position: relative;
-	    left: -20px;
-	    top: 125px;
+	    top: 175px;
 	}
 
 	.bottom-container {
 		width: 320px;
-		margin-left:-15px;
 	    height: 50px;
 	    position: absolute;
 	    bottom: 30px;©
@@ -419,6 +414,6 @@ and (orientation : portrait) {
 	}
 
 	.thumb p {
-		font-size:8px;
+		font-size:10px;
 	}
 }
