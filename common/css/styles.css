@@ -24,34 +24,41 @@ body {
 	left: 25px;  
 }
 
+.featured-thumb-container {
+	height:100vh;
+	width:50%;
+	position: absolute;
+	top:0;
+	right:0;
+
+}
+
+.featured-thumb {
+	width:350px;
+	float: right;
+	margin-right: 25px;
+	margin-top:25px;
+	/*border:1px solid red;*/
+}
+
 .logo-container img {
 	width:50%;
 	height:auto;
 }
 
-.featured-container-portrait {
-	margin-top:100px;
-}
-
-.featured-thumb {
-	width:400px;
-	padding:100px 0;
-	margin-top:-150px;
-}
-
 /********    Top Level Sales    *******/
 
 .bottom-container {
-	width:960px;
-	height:200px;
+	width:100%;
+	height:150px;
 	position: absolute;
 	bottom:30px;
 	text-align: center;
 }
 
 .thumb {
-	width:200px;
-	height:200px;
+	width:150px;
+	height:150px;
 	background-color: #404D66;
 	color:#fff;
 	font-family: "proxyNovaThin", Helvetica;
@@ -82,13 +89,14 @@ body {
 ====================================================*/
 /*iPad Landscape*/
 @media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
+and (width : 1024px) 
+and (height : 768px) 
 and (orientation : landscape) {
 
 	.featured-thumb {
-		width:400px;
-		margin-top:-150px;
+		position: relative;
+    	margin-top: -150px;
+	    top: 150px;
 	}
 
 	.bottom-container {
@@ -104,25 +112,14 @@ and (orientation : landscape) {
 
 /* iPad Portrait */
 @media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
+and (width : 768px) 
+and (height : 1024px) 
 and (orientation : portrait) { 
-
-	.featured-container-portrait {
-		position: relative;
-		top:250px;
-	}
 
 	.featured-thumb {
 		position: relative;
-		top:-75px;
-		left:-25px;
-	}
-
-	.bottom-container {
-		position: absolute;
-		left:-100px;
-		height:160px;
+    	margin-top: -150px;
+	    top: 300px;
 	}
 
 	.bottom-container {
@@ -152,23 +149,22 @@ and (orientation : landscape) {
 
 	.featured-thumb {
 		width:225px;
-		padding:85px 0;
 		position: relative;
-		left:-30px;
-		top:-10px;
+		margin-top:-100px;
+		top:75px;
 	}
 
 	.bottom-container {
 		width: 736px;
-	    height: 100px;
+	    height: 90px;
 	    position: absolute;
 	    bottom: 30px;
 	    text-align: center;
 	}
 
 	.thumb {
-		width:100px;
-		height:100px;
+		width:90px;
+		height:90px;
 	}
 
 	.thumb p {
@@ -182,15 +178,12 @@ and (width : 414px)
 and (height : 736px) 
 and (orientation : portrait) { 
 	.featured-thumb {
-		width:225px;
-		padding:85px 0;
 		position: relative;
-		left:-25px;
-		top:200px;
+		margin-top:-80px;
+		top:250px;
 	}
 
 	.bottom-container {
-		width: 385px; /* shifts left right into proper position. use instead of 414px */
 	    height: 75px;
 	    position: absolute;
 	    bottom: 30px;
@@ -198,12 +191,12 @@ and (orientation : portrait) {
 	}
 
 	.thumb {
-		width:75px;
-		height:75px;
+		width:80px;
+		height:80px;
 	}
 
 	.thumb p {
-		font-size:12px;
+		font-size:11px;
 	}
 }
 
@@ -214,8 +207,8 @@ and (orientation : portrait) {
 
 /*iPhone 6 landscape*/
 @media only screen 
-and (width : 668px) 
-and (height : 376px) 
+and (width : 667px) 
+and (height : 375px) 
 and (orientation : landscape) {
 	.logo-container img {
 		width:30%;
@@ -223,11 +216,10 @@ and (orientation : landscape) {
 	}
 
 	.featured-thumb {
-		width:200px;
-		padding:85px 0;
+		width:185px;
 		position: relative;
-		left:-30px;
-		top:-10px;
+		margin-top:-80px;
+		top:50px;
 	}
 
 	.bottom-container {
@@ -250,20 +242,18 @@ and (orientation : landscape) {
 
 /*iPhone 6 portrait*/
 @media only screen 
-and (width : 376px) 
-and (height : 668px) 
+and (width : 375px) 
+and (height : 667px) 
 and (orientation : portrait) {
 	.featured-thumb {
 		width:225px;
-		padding:85px 0;
 		position: relative;
-		left:-25px;
-		top:200px;
+		margin-top:-80px;
+		top:300px;
 	}
 
 	.bottom-container {
 		width:376px;
-		margin-left:-15px;
 	    height: 70px;
 	    position: absolute;
 	    bottom: 30px;
@@ -276,7 +266,7 @@ and (orientation : portrait) {
 	}
 
 	.thumb p {
-		font-size:8px;
+		font-size:10px;
 	}
 }
 
@@ -287,8 +277,8 @@ and (orientation : portrait) {
 
 /*iPhone 5 landscape*/
 @media only screen 
-and (width : 568px) 
-and (height : 320px) 
+and (max-width : 568px) 
+and (max-height : 320px) 
 and (orientation : landscape) {
 	.logo-container img {
 		width:25%;
@@ -297,10 +287,9 @@ and (orientation : landscape) {
 
 	.featured-thumb {
 		width:175px;
-		padding:85px 0;
 		position: relative;
-		left:-30px;
-		top:-10px;
+		margin-top:-70px;
+		top:40px;
 	}
 
 	.bottom-container {
@@ -323,8 +312,8 @@ and (orientation : landscape) {
 
 /*iPhone 5 portrait*/
 @media only screen 
-and (width : 320px) 
-and (height : 568px) 
+and (max-width : 320px) 
+and (max-height : 568px) 
 and (orientation : portrait) {
 	.logo-container img {
 		width:35%;
@@ -333,17 +322,16 @@ and (orientation : portrait) {
 
 	.featured-thumb {
 		width: 200px;
-	    padding: 85px 0;
 	    position: relative;
-	    left: -20px;
-	    top: 125px;
+	    margin-top:-50px;
+	    top: 200px;
 	}
 
 	.bottom-container {
-		width: 293px;
+		width: 320px;
 	    height: 50px;
 	    position: absolute;
-	    bottom: 30px;©
+	    bottom: 30px;
 	    text-align: center;
 	}
 
@@ -364,8 +352,8 @@ and (orientation : portrait) {
 
 /*iPhone 4 landscape*/
 @media only screen 
-and (width : 480px) 
-and (height : 320px) 
+and (max-width : 480px) 
+and (max-height : 320px) 
 and (orientation : landscape) {
 	.logo-container img {
 		width:25%;
@@ -400,8 +388,8 @@ and (orientation : landscape) {
 
 /*iPhone 4 portrait*/
 @media only screen 
-and (width : 320px) 
-and (height : 480px) 
+and (max-width : 320px) 
+and (max-height : 480px) 
 and (orientation : portrait) {
 	.logo-container img {
 		width:35%;
